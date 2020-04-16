@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        register-enabled: true
+        server-addr: 114.67.64.55:8848
+        namespace: 67055811-8516-4106-9814-1319dd0507ca
+    gateway:
+      routes:
+        - id: service-provider
+          uri: lb://service-provider
+          predicates:
+            - Path=/service-provider/**
