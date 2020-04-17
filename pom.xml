@@ -24,7 +24,7 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-gateway</artifactId>
-            <version>2.2.0.RELEASE</version>
+            <version>2.2.2.RELEASE</version>
         </dependency>
         <!--nacos服务注册与发现-->
         <!-- nacos 的服务注册与发现 -->
