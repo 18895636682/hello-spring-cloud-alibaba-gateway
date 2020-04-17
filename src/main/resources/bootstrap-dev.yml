@@ -15,7 +15,12 @@ spring:
           uri: lb://service-provider
           predicates:
             - Path=/service-provider/**
+          filters:
+            - StripPrefix=1
+
         - id: service-freeswitch
           uri: lb://service-freeswitch
           predicates:
             - Path=/service-freeswitch/**
+          filters:
+            - StripPrefix=1
